@@ -2,6 +2,10 @@
 
 Monospace is a community for open source developer's targeting the .NET/Mono frameworks.
 
+# Organizers
+
+Dale Ragan [@dwragan](http://twitter.com/dwragan/ "Dale's Twitter Feed") [SineSignal](http://sinesignal.com/ "SineSignal")
+
 ## Copyright
 
 Copyright &#169; 2011 Monospace
