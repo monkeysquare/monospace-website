@@ -1,6 +1,5 @@
 # Monospace Public Website
 
-
 Monospace is a community for open source developer's targeting the .NET/Mono frameworks.
 
 ## Copyright
