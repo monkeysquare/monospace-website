@@ -1,114 +1,30 @@
-body {
-	font-size: 1em;
-	height: 100%;
-	padding: 0px;
-	color: #333333;
-	background:#fff;
-}
-
-A:link {text-decoration: none; color: #0D7796;}
-A:visited {text-decoration: none; color: #0D7796;}
-A:active {text-decoration: none;}
-A:hover {text-decoration: underline;}
-
-#header {
-	width: 900px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#header .logo {
-	float: left;
-	width: 610px;
-	padding-right: 10px;
-}
-
-#header .location {
-	float: right;
-	width: 280px;
-	font-size: 1.2em;
-}
-
-#header .follow_us {
-	color: #666;
-	font-size: .8em;
-	position: relative;
-	left: 135px;
-}
-
-#navigation {
-	background-color: #FF9819;
-	margin-top: 20px;
-	padding: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-#navigation .menu {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#navigation .menu A:visited {
-	text-decoration: none; color: #0D7796;
-}
-
-.clear {
-	clear: both;
-}
-
-#content {
-	width: 900px;
-	min-height: 400px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#content .all_content {
-	float: left;
-	height: 100%;
-}
-
-#content .all_content .section {
-	margin-top: 20px;
-}
-
-#content .all_content .section .section_name {
-	float: left;
-	width: 125px;
-	margin-right: 10px;
-	margin-top: 20px;
-	font-size: 1.5em;
-}
-
-#content .all_content .section .article {
-	float: left;
-	width: 470px;
-	font-size: 0.9em;
-	margin-top: 10px;
-}
-
-#content .sponsors {
-	float: right;
-	width: 280px;
-	margin-top: 30px;
-
-	display: none;
-}
-
-#content .sponsors .sponsor {
-}
-
-#content .email {
-	font-weight: bold;
-	font-size: 0.8em;
-}
-
-.copyright {
-	color: #666;
-	font-size: .8em;
-	width: 100%;
+html {
+	background-color: #F0F0F0;
+	color: #000000;
 	text-align: center;
-	padding-top: 40px;
 }
+
+body {
+	margin: 0 auto;
+	position: relative;
+	width: 1092px;
+}
+
+a:link, a:visited {
+	color: #F09911;
+}
+
+a:hover {
+	color: #65C7F8;
+}
+
+/*-  CLEAR FLOATS
+----------------------------------------------------------------------*/
+.group:after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+
