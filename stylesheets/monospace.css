@@ -1,13 +1,7 @@
-html {
-	background-color: #F0F0F0;
-	color: #000000;
-	text-align: center;
-}
-
 body {
-	margin: 0 auto;
-	position: relative;
-	width: 1092px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	color: #000000;
+	background-color: #F0F0F0;
 }
 
 a:link, a:visited {
@@ -16,6 +10,19 @@ a:link, a:visited {
 
 a:hover {
 	color: #65C7F8;
+}
+
+#wrap {
+	width: 80%;
+	max-width: 1000px;
+	min-width: 700px;
+	margin: 0 auto;
+	padding: 25px 0 0 0;
+	text-align: center;
+}
+
+#header {
+	padding: 0 0 50px 0;
 }
 
 /*-  CLEAR FLOATS
