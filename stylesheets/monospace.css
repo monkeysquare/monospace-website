@@ -12,6 +12,18 @@ a:hover {
 	color: #65C7F8;
 }
 
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+	margin-bottom: 10px;
+}
+
+p {
+	line-height: 1.5em;
+}
+
 #wrap {
 	width: 80%;
 	max-width: 1000px;
@@ -23,6 +35,167 @@ a:hover {
 
 #header {
 	padding: 0 0 50px 0;
+}
+
+.left {
+	display: block;
+	float: left;
+	width: 192px;
+	text-align: right;
+}
+
+.center {
+	display: block;
+	float: left;
+	margin: 0 30px;
+	width: 556px;
+	text-align: left;
+}
+
+.right {
+	display: block;
+	float: right;
+	width: 192px;
+	text-align: left;
+}
+
+#intro .center {
+	width: 364px;
+}
+
+#intro .right {
+	width: 384px;
+}
+
+#registration {
+	margin-top: 25px;
+}
+
+#registration div {
+	display: block;
+	float: left;
+}
+
+#registration div p {
+	margin-top: 5px;
+	margin-left: 222px;
+}
+
+#registration div p strong {
+	font-size: 20px;
+}
+
+#registration .button {
+	display: block;
+	float: right;
+	text-align: right;
+}
+
+#registration .button a {
+	display: block;
+	width: 192px;
+	height: 50px;
+}
+
+#registration .button a:link, #registration .button a:visited {
+	background: transparent url(../images/button_grabaseat.png) 0 -5px no-repeat;
+}
+
+#registration .button a:hover {
+	background-position: 0 -104px;
+}
+
+#sponsors {
+	margin-top: 45px;
+}
+
+#sponsors ul, #sponsors li {
+	display: inline;
+}
+
+#sponsors ul li {
+	margin-right: 20px;
+}
+
+#location {
+	margin-top: 45px;
+}
+
+#location h2 {
+	margin-bottom: 10px;
+}
+
+#location ul li {
+	margin-bottom: 5px;
+}
+
+.tabs-container img {
+    border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.tabs-container h4 {
+	margin: 15px 0;
+}
+
+.tabs-container p {	
+	margin-bottom: 10px;
+}
+
+#venue-info {
+	margin-bottom: 15px;
+}
+
+#venue-info li {
+	font-size: 80%;
+	padding: 5px;
+}
+
+#venue-info li.active {
+    background: #65C7F8;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+#venue-info li.active a {
+    color: #fff;
+}
+
+#footer {
+	border-top: 2px #CCC solid;
+	margin-top: 65px;
+	padding-top: 45px;
+}
+
+#nav {
+	display: block;
+	float: left;
+}
+
+#nav ul li {
+	margin: 5px 0;
+}
+
+#legal {
+	display: block;
+	float: right;
+	text-align: left;
+}
+
+#by-sa {
+	width: 88px;
+	height: 31px;
+	padding: 0 0 4px 0;
+	background: url("../images/by-sa.png") no-repeat scroll;
+}
+
+#by-nc-nd {
+	width: 88px;
+	height: 31px;
+	padding: 0 0 4px 0;
+	background: url("../images/by-nc-nd.png") no-repeat scroll;
 }
 
 /*-  CLEAR FLOATS
