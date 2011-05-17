@@ -75,6 +75,7 @@ p {
 #registration div {
 	display: block;
 	float: left;
+	text-align: left;
 }
 
 #registration div p {
@@ -84,6 +85,11 @@ p {
 
 #registration div p strong {
 	font-size: 20px;
+}
+
+#registration span.price {
+	color: #F09911;
+	text-align: left;
 }
 
 #registration .button {
