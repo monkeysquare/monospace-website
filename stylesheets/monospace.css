@@ -1,11 +1,12 @@
 body {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	font-family: Arial, sans-serif, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica;
 	color: #000000;
 	background-color: #F0F0F0;
 }
 
 a:link, a:visited {
 	color: #F09911;
+	text-decoration: none;
 }
 
 a:hover {
@@ -25,16 +26,12 @@ p {
 }
 
 #wrap {
-	width: 80%;
-	max-width: 1000px;
-	min-width: 700px;
+	width: 960px;
+	max-width: 960px;
+	min-width: 960px;
 	margin: 0 auto;
 	padding: 25px 0 0 0;
 	text-align: center;
-}
-
-#header {
-	padding: 0 0 50px 0;
 }
 
 .left {
@@ -48,7 +45,7 @@ p {
 	display: block;
 	float: left;
 	margin: 0 30px;
-	width: 556px;
+	width: 516px;
 	text-align: left;
 }
 
@@ -59,8 +56,12 @@ p {
 	text-align: left;
 }
 
+#intro {
+	margin-top: 120px;
+}
+
 #intro .center {
-	width: 364px;
+	width: 324px;
 }
 
 #intro .right {
@@ -106,7 +107,7 @@ p {
 }
 
 #sponsors {
-	margin-top: 45px;
+	margin-top: 120px;
 }
 
 #sponsors ul, #sponsors li {
@@ -114,11 +115,11 @@ p {
 }
 
 #sponsors ul li {
-	margin-right: 20px;
+	margin-right: 12px;
 }
 
 #location {
-	margin-top: 45px;
+	margin-top: 120px;
 }
 
 #location h2 {
@@ -164,8 +165,8 @@ p {
 }
 
 #footer {
-	border-top: 2px #CCC solid;
-	margin-top: 65px;
+	border-top: 1px #CCC solid;
+	margin-top: 120px;
 	padding-top: 45px;
 }
 
