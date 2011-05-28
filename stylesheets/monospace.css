@@ -128,7 +128,15 @@ p {
 	margin-top: 45px;
 }
 
-#sponsor-us h4 {
+#speakers h2 {
+	margin-bottom: 10px;
+}
+
+#speakers {
+	margin-top: 120px;
+}
+
+#location h2 {
 	margin-bottom: 10px;
 }
 
@@ -156,6 +164,39 @@ p {
 
 .tabs-container p {	
 	margin-bottom: 10px;
+}
+
+.talk_bio {
+	background: #e2e2e2;
+	min-height: 375px;
+	padding: 10px;
+	width: 100%;
+}
+
+.talk_bio img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.talk_bio .name {
+	font-size: 1.25em;
+	font-weight: bold;
+	width: 100%;
+}
+
+.talk_bio .talk {
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.talk_bio ul {
+	line-height: 1.5em;
+}
+
+.talk_bio p {
+	padding-top: 10px;
 }
 
 #venue-info {
