@@ -152,6 +152,22 @@ p {
 	margin-bottom: 5px;
 }
 
+#schedule h2 {
+	margin-bottom: 10px;
+}
+
+#schedule {
+	margin-top: 120px;
+}
+
+#schedule h2 {
+	margin-bottom: 10px;
+}
+
+#schedule ul li {
+	margin-bottom: 5px;
+}
+
 .tabs-container img {
     border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -164,6 +180,38 @@ p {
 
 .tabs-container p {	
 	margin-bottom: 10px;
+}
+
+.schedule-container p {
+	margin-bottom: 10px;
+}
+
+.schedule table {
+	font-size: 80%;
+	margin-top: 10px;
+	text-align: left;
+	width: 100%;
+}
+
+.schedule .time {
+	width: 115px;
+}
+
+.schedule .header {
+	border-bottom: 5px double #e2e2e2;
+	padding: 5px;
+}
+
+.schedule .timeline {
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.schedule th {
+	padding: 5px;
+}
+
+.schedule td {
+	padding: 5px;
 }
 
 .talk_bio {
