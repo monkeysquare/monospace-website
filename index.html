@@ -354,7 +354,7 @@
 					<div class="schedule-container center">
 						<div id="day1" class="schedule">
 							<h4>Saturday, July 23rd</h4>
-							<table id='scheduleTable'>
+							<table class='scheduleTable'>
 								<tr class="header">
 									<th scope="col">&nbsp;</th>
 									<th scope="col">At</th>
@@ -453,64 +453,96 @@
 						
 						<div id="day2" class="schedule">
 							<h4>Sunday, July 24th</h4>
-							<table>
+							<table class='scheduleTable'>
 								<tr class="header">
 									<th scope="col">&nbsp;</th>
 									<th scope="col">At</th>
 									<th scope="col">In</th>
 								</tr>
 								<tr>
-									<th scope="row" rowspan="2" class="timeline time">09:00am - 10:00am</td>
-									<td>Let me introduce my Moncai!</td>
+									<th scope="row" rowspan="4" class="timeline time">09:00am - 10:00am</td>
+									<td><a href="#dale" title="session">Let me introduce my Moncai!</a></td>
 									<td>Mann</td>
 								</tr>
-								<tr>
-									<td class="timeline">Forget about threads: tasks, asynchronous methods &amp; coroutines</td>
-									<td class="timeline">Sampson</td>
+								<tr class="timeline">
+									<td colspan="2" id="dalePreview" class="preview"></td>
 								</tr>
+								<tr>
+									<td><a href="#arne" title="session">Forget about threads: tasks, asynchronous methods &amp; coroutines</a></td>
+									<td>Sampson</td>
+								</tr>
+								<tr class="timeline">
+									<td colspan="2" id="arnePreview" class="preview"></td>
+								</tr>
+
 								<tr class="timeline">
 									<th scope="row" class="time">10:00am - 10:15am</td>
 									<td colspan="2">break</td>
 								</tr>
+
 								<tr>
-									<th scope="row" rowspan="2" class="timeline time">10:15am - 11:15am</td>
-									<td>Asynchronous programming made simple through messaging</td>
+									<th scope="row" rowspan="4" class="timeline time">10:15am - 11:15am</td>
+									<td><a href="#svein" title="session">Asynchronous programming made simple through messaging</a></td>
 									<td>Mann</td>
 								</tr>
-								<tr>
-									<td class="timeline">Using MongoDB on Mono</td>
-									<td class="timeline">Sampson</td>
+								<tr class="timeline">
+									<td colspan="2" id="sveinPreview" class="preview"></td>
 								</tr>
+								<tr>
+									<td><a href="#justin" title="session">Using MongoDB on Mono</a></td>
+									<td>Sampson</td>
+								</tr>
+								<tr class="timeline">
+									<td colspan="2" id="justinPreview" class="preview"></td>
+								</tr>
+
 								<tr class="timeline">
 									<th scope="row" class="time">11:15pm - 11:35am</td>
 									<td colspan="2">break</td>
 								</tr>
+
 								<tr>
-									<th scope="row" rowspan="2" class="timeline time">11:30am - 12:30pm</td>
-									<td>Functional Async UI Programming using Reactive Extensions and ReactiveUI</td>
+									<th scope="row" rowspan="4" class="timeline time">11:30am - 12:30pm</td>
+									<td><a href="#paul" title="session">Functional Async UI Programming using Reactive Extensions and ReactiveUI</a></td>
 									<td>Mann</td>
 								</tr>
-								<tr>
-									<td class="timeline">Cross Platform .Net Desktop Development</td>
-									<td class="timeline">Sampson</td>
+								<tr class="timeline">
+									<td colspan="2" id="paulPreview" class="preview"></td>
 								</tr>
+								<tr>
+									<td><a href="#jonathan" title="session">Cross Platform .Net Desktop Development</a></td>
+									<td>Sampson</td>
+								</tr>
+								<tr class="timeline">
+									<td colspan="2" id="jonathanPreview" class="preview"></td>
+								</tr>
+
 								<tr class="timeline">
 									<th scope="row" class="time">12:30pm - 01:45pm</td>
 									<td colspan="2">lunch</td>
 								</tr>
+
 								<tr>
-									<th scope="row" rowspan="2" class="timeline time">01:45pm - 02:45pm</td>
-									<td>intro to OWIN and Gate</td>
+									<th scope="row" rowspan="4" class="timeline time">01:45pm - 02:45pm</td>
+									<td><a href="#benjamin" title="session">intro to OWIN and Gate</a></td>
 									<td>Mann</td>
 								</tr>
-								<tr>
-									<td class="timeline">Mono and C++ - Updates from the interoperability world</td>
-									<td class="timeline">Sampson</td>
+								<tr class="timeline">
+									<td colspan="2" id="benjaminPreview" class="preview"></td>
 								</tr>
+								<tr>
+									<td><a href="#andreia" title="session">Mono and C++ - Updates from the interoperability world</a></td>
+									<td>Sampson</td>
+								</tr>
+								<tr class="timeline">
+									<td colspan="2" id="andreiaPreview" class="preview"></td>
+								</tr>
+
 								<tr class="timeline">
 									<th scope="row" class="time">02:45pm - 03:00pm</td>
 									<td colspan="2">break</td>
 								</tr>
+
 								<tr class="timeline">
 									<th scope="row" class="time">03:00pm - 04:00pm</td>
 									<td colspan="2">Start of the Open Space</td>
@@ -641,7 +673,7 @@
 					return false;
 				});
 
-				$("#scheduleTable a").click(function() {
+				$(".scheduleTable a").click(function() {
 					var speakerId = $(this).attr("href");
 
 					if ($(speakerId + 'Preview').html().length === 0) {
