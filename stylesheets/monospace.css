@@ -202,7 +202,7 @@ p {
 	padding: 5px;
 }
 
-.schedule .timeline {
+.timeline {
 	border-bottom: 1px solid #e2e2e2;
 }
 
@@ -244,6 +244,32 @@ p {
 }
 
 .talk_bio p {
+	padding-top: 10px;
+}
+
+.preview img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.preview .name {
+	font-size: 1.25em;
+	font-weight: bold;
+	width: 100%;
+}
+
+.preview .talk {
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.preview ul {
+	line-height: 1.5em;
+}
+
+.preview p {
 	padding-top: 10px;
 }
 

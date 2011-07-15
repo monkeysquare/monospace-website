@@ -354,7 +354,7 @@
 					<div class="schedule-container center">
 						<div id="day1" class="schedule">
 							<h4>Saturday, July 23rd</h4>
-							<table>
+							<table id='scheduleTable'>
 								<tr class="header">
 									<th scope="col">&nbsp;</th>
 									<th scope="col">At</th>
@@ -364,56 +364,89 @@
 									<th scope="row" class="time">09:00am - 10:00am</td>
 									<td colspan="2">registration</td>
 								</tr>
-								<tr class="timeline">
+								<tr rowspan="4">
 									<th scope="row" class="time">10:15am - 11:15am</td>
-									<td colspan="2">Keynote</td>
+									<td colspan="2"><a href="#keynote" title="Keynote">Keynote</a></td>
+								</tr>
+								<tr class="timeline">
+									<td>&nbsp;</td>
+									<td colspan="2" id="keynotePreview" class="preview"></td>
 								</tr>
 								<tr class="timeline">
 									<th scope="row" class="time">11:15am - 11:30am</td>
 									<td colspan="2">break</td>
 								</tr>
+
 								<tr>
-									<th scope="row" rowspan="2" class="timeline time">11:30am - 12:30pm</td>
-									<td>Introduction to Android development using .Net and Mono</td>
+									<th scope="row" rowspan="4" class="timeline time">11:30am - 12:30pm</td>
+									<td><a href="#greg" title="session">Introduction to Android development using .Net and Mono</a></td>
 									<td>Mann</td>
 								</tr>
-								<tr>
-									<td class="timeline">Using APIs to connect people to your app and each other</td>
-									<td class="timeline">Sampson</td>
+								<tr class="timeline">
+									<td colspan="2" id="gregPreview" class="preview"></td>
 								</tr>
+								<tr>
+									<td><a href="#john" title="session">Using APIs to connect people to your app and each other</a></td>
+									<td>Sampson</td>
+								</tr>
+								<tr class="timeline">
+									<td colspan="2" id="johnPreview" class="preview"></td>
+								</tr>
+
 								<tr class="timeline">
 									<th scope="row" class="time">12:30pm - 01:45pm</td>
 									<td colspan="2">lunch</td>
 								</tr>
+
 								<tr>
-									<th scope="row" rowspan="3" class="timeline time">01:45pm - 02:45pm</td>
-									<td>Cross platform mobile data access paterns</td>
+									<th scope="row" rowspan="6" class="timeline time">01:45pm - 02:45pm</td>
+									<td><a href="#travis" title="session">Cross platform mobile data access paterns</a></td>
 									<td>Mann</td>
 								</tr>
+								<tr class="timeline">
+									<td colspan="2" id="travisPreview" class="preview"></td>
+								</tr>
 								<tr>
-									<td>F# and Mono, best friends forever</td>
+									<td><a href="#richard" title="session">F# and Mono, best friends forever</a></td>
 									<td>Sampson</td>
 								</tr>
-								<tr>
-									<td class="timeline">Presentation Patterns Case Study</td>
-									<td class="timeline">Adams</td>
+								<tr class="timeline">
+									<td colspan="2" id="richardPreview" class="preview"></td>
 								</tr>
+								<tr>
+									<td><a href="#rob" title="session">Screen Patterns</a></td>
+									<td>Adams</td>
+								</tr>
+								<tr class="timeline">
+									<td colspan="2" id="robPreview" class="preview"></td>
+								</tr>
+
 								<tr class="timeline">
 									<th scope="row" class="time">02:45pm - 03:00pm</td>
 									<td colspan="2">break</td>
 								</tr>
+
 								<tr>
-									<th scope="row" rowspan="3" class="timeline time">03:00pm - 04:00pm</td>
-									<td>Problems and solutions for mobile app developers</td>
+									<th scope="row" rowspan="6" class="timeline time">03:00pm - 04:00pm</td>
+									<td><a href="#frank" title="session">Problems and solutions for mobile app developers</a></td>
 									<td>Mann</td>
 								</tr>
-								<tr>
-									<td>Asynchronous memcached with a side of Ketchup and Membase</td>
-									<td>Sampson</td>
+								<tr class="timeline">
+									<td colspan="2" id="frankPreview" class="preview"></td>
 								</tr>
 								<tr>
-									<td class="timeline">A tour of the F# compiler</td>
-									<td class="timeline">Adams</td>
+									<td><a href="#jason" title="session">Asynchronous memcached with a side of Ketchup and Membase</a></td>
+									<td>Sampson</td>
+								</tr>
+								<tr class="timeline">
+									<td colspan="2" id="jasonPreview" class="preview"></td>
+								</tr>
+								<tr>
+									<td><a href="#joe" title="session">A tour of the F# compiler</a></td>
+									<td>Adams</td>
+								</tr>
+								<tr class="timeline">
+									<td colspan="2" id="joePreview" class="preview"></td>
 								</tr>
 							</table>
 						</div>
@@ -605,6 +638,20 @@
 					$("#schedule div.schedule-container > div").hide();
 					var activeTab = $(this).find("a").attr("href");
 					$(activeTab).fadeIn();
+					return false;
+				});
+
+				$("#scheduleTable a").click(function() {
+					var speakerId = $(this).attr("href");
+
+					if ($(speakerId + 'Preview').html().length === 0) {
+						var content = $(speakerId).clone(false).find('*').removeAttr('id');
+						content.appendTo($(speakerId + 'Preview'));
+					}
+					else {
+						$(speakerId + 'Preview').empty();
+					}
+
 					return false;
 				});
 			});
