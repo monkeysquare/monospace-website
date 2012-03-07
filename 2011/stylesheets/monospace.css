@@ -308,18 +308,6 @@ p {
 	margin: 5px 0;
 }
 
-#mailing-list {
-	display: block;
-	float: left;
-	margin-left: 35px;
-	width: 240px;
-}
-
-#mailing-list label, 
-#mailing-list p {
-	font-size: 12px;
-}
-
 #legal {
 	display: block;
 	float: right;
