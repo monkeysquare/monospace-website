@@ -15,8 +15,20 @@ Compile("/2011/*/", (context) => {
   // Don't filter or layout
 });
 
+Route("/js/*/", (context) => {
+  return context.Item.Identifier.Chop() + context.Item.Meta["extension"];
+});
+
+Route("/css/*/", (context) => {
+  return context.Item.Identifier.Chop() + context.Item.Meta["extension"];
+});
+
+Compile("/speakers/", (context) => {
+  // Don't filter or layout
+});
+
 Compile("/", (context) => {
-  context.WithFilter("markdown").WithLayout("default");
+  // Don't filter or layout
 });
 
 Compile("*", (context) => {

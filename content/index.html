@@ -1,10 +1,276 @@
-# Monospace 2012 - Coming October 17-19
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Monospace 2012</title>
+		<link rel="stylesheet" type="text/css" media="all" href="css/screen.css" />
+		<link rel="stylesheet" href="css/reveal.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="js/jquery.reveal.js" type="text/javascript"></script>
+		<script type="text/javascript" src="http://guestlistapp.com/javascripts/guestlist-embed.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#tabs div').hide(); // Hide all divs
+				$('#tabs div:first').show(); // Show the first div
+				$('#tabs ul#tab-nav li:first').addClass('active'); // Set the class for active state
 
-Monospace is the official cross platform and open-source .NET conference.  Want to learn more about developing for the iPhone, Android, Mac, and *nix platforms using .NET technologies?  How about developing games or learning more about open-source projects using .NET technologies?  Monospace has provided an annual venue to collaborate, share, and socialize around these topics and more.
+				$('#tabs ul#tab-nav li a').click(function(){ // When link is clicked
+					$('#tabs ul#tab-nav li').removeClass('active'); // Remove active class from links
+					$(this).parent().addClass('active'); //Set parent of clicked link class to active
+					var currentTab = $(this).attr('href'); // Set currentTab to value of href attribute
+					$('#tabs div').hide(); // Hide all divs
+					$(currentTab).show(); // Show div with id equal to variable currentTab
+					return false;
+				});
+			});
+		</script>
 
-Monospace provides developers a unique look at running their applications across all the platforms using Microsoft's .NET Framework by focusing on the Mono framework and open source .NET technologies. We will start with 2 days of talks and sessions, aiming to teach the attendees about the various technologies and innovations that currently exists. We will then end with a one day open space unconference where dialogs and conversations will help kick start the next wave of open source projects that will help the community remain competitive.
-
-A call for speakers and registration will open soon with an all new website design, but in the mean time for more info feel free to visit our <a href="http://lanyrd.com/2012/monospace-conf/" title="Monospace 2012 Lanyrd Page" target="_blank">Lanyrd page</a>!
-
-### Past Conferences
-* <a href="/2011" title="Monospace 2011">2011</a></li>
+		<!--[if lt IE 9]>
+			<script src="js/modernizr-2.5.3.js"></script>
+		<![endif]-->
+		<link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<section id="masthead">
+			<div class="wrapper">
+				<div id="branding">
+					<h1 id="logo">MonoSpace</h1>
+					<nav>
+						<ul>
+							<li><a href="#speakers">Speakers</a></li>
+							<li><a href="#location">Location</a></li>
+							<li><a href="#schedule">Schedule</a></li>
+							<li><a href="#sponsors">Sponsors</a></li>
+							<li><a href="#brought">Organizers</a></li>
+							<li><a href="mailto:info@monospace.us">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div id="intro">
+					<h2>Monospace 2012</h2>
+					<p>Monospace is the official cross platform and open-source .NET conference. Want to learn more about developing for the iPhone, Android, Mac, and *nix platforms using .NET technologies? How about developing games or learning more about open-source projects using .NET technologies? Monospace has provided an annual venue to collaborate, share, and socialize around these topics and more.</p>
+					<a class="guestlist-event-92640"><span class="date">17th Oct</span>Register Now</a>
+					<a href="#" data-reveal-id="ticket-info"> * Ticket Information</a>
+				</div>
+			</div>
+		</section>
+		<section id="speakers">
+			<div class="wrapper">
+				<h3>Monospace 2012 Speakers</h3>
+				<ul id="speakers-area">
+					<li><a href="#" data-reveal-id="chris"><img src="images/speakers/chris.jpg" width="159" height="159" /></a> </li>
+					<li><a href="#" data-reveal-id="demis"><img src="images/speakers/demis.jpg" width="159" height="159" /></a> </li>
+					<li><a href="#" data-reveal-id="frank"><img src="images/speakers/frank.jpg" width="159" height="159" /></a> </li>
+					<li><a href="#" data-reveal-id="greg"><img src="images/speakers/greg.jpg" width="159" height="159" /></a> </li>
+					<li class="last"><a href="#" data-reveal-id="james"><img src="images/speakers/james.jpg" width="159" height="159" /></a> </li>
+					<li><a href="#" data-reveal-id="jb"><img src="images/speakers/jb.jpg" width="159" height="159" /> </a></li>
+					<li><a href="#" data-reveal-id="jeroen"><img src="images/speakers/jeroen.jpg" width="159" height="159" /></a> </li>
+					<li><a href="#" data-reveal-id="phil"><img src="images/speakers/phil.jpg" width="159" height="159" /></a> </li>
+					<li><a href="#"><img src="images/speakers/tbc.jpg" width="159" height="159" /></a> </li>
+					<li class="last"><a href="speakers/"><img src="images/speakers/call.jpg" width="159" height="159" /> </a></li>
+				</ul>
+			</div>
+		</section>
+		<section id="location">
+			<div class="wrapper">
+				<h3>Monsospace 2012 Location</h3>
+				<div class="content">
+					<p>Monospace will be held at the Microsoft NERD Center located in Boston, MA one of the most historic cities in the United States. We also negotiated a group rate at the Boston Marriott Cambridge to allow everybody who attends to stay at the same hotel. You can find more info about the venue and hotel accommodations below. </p>
+					<ul id="address">
+						<li><h4>Address</h4></li>
+						<li>Microsoft NERD Center</li>
+						<li>1 Memorial Drive</li>
+						<li>Cambridge, MA  02142</li>
+						<li>United States</li>			 
+					</ul>
+					<ul id="hotel">
+						<li><h4>Hotel</h4></li>
+						<li>Boston Marriott Cambridge</li>
+						<li>Two Cambridge Center</li>
+						<li>50 Broadway</li>
+						<li>Cambridge, MA 02142</li>
+					</ul>
+				</div>
+				<div id="map">
+					<iframe width="450" height="231" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Microsoft+NERD+Center,+1+Memorial+Drive,+Cambridge,+MA++02142&amp;aq=&amp;sll=33.980755,-118.194496&amp;sspn=0.316292,0.377312&amp;ie=UTF8&amp;hq=Microsoft+NERD+Center,+1+Memorial+Drive,+Cambridge,+MA++02142&amp;hnear=&amp;radius=15000&amp;t=m&amp;ll=42.362983,-71.07502&amp;spn=0.044394,0.072956&amp;z=13&amp;output=embed"></iframe>
+				</div>
+			</div>
+		</section>
+		<section id="schedule">
+			<div class="wrapper">
+				<h3>Monospace 2012 Schedule</h3>
+				<div id="tabs">
+					<ul id="tab-nav">
+						<li class="faq_select"><a href="#wed">Wednesday, Oct 17th</a></li>
+						<li class="feature_select"><a href="#thu">Thursday, Oct 18th</a></li>
+						<li class="feature_select"><a href="#fri">Friday, Oct 19th</a></li>
+					</ul>
+					<div id="wed">
+						<table>
+							<tr>
+								<th class="col1">Time</th>
+								<th class="col2">Talk</th>
+								<th class="col3">Speaker</th>
+								<th class="col4">Location</th>
+							</tr>
+						</table>
+						<p style="text-align: center">Sessions will be posted after the call for speakers.</p>
+					</div>
+					<div id="thu">
+						<table>
+							<tr>
+								<th class="col1">Time</th>
+								<th class="col2">Talk</th>
+								<th class="col3">Speaker</th>
+								<th class="col4">Location</th>
+							</tr>
+						</table>
+						<p style="text-align: center">Sessions will be posted after the call for speakers.</p>
+					</div>
+					<div id="fri">
+						<table>
+							<tr>
+								<th class="col1">Time</th>
+								<th class="col2">Talk</th>
+								<th class="col3">Speaker</th>
+								<th class="col4">Location</th>
+							</tr>
+						</table>
+						<p style="text-align: center">Sessions will be posted after the call for speakers.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="sponsors">
+			<div class="wrapper">
+				<h3>Monospace 2012 Sponsors</h3>
+				<p>Of course the Monospace conference wouldn't be possible if it wasn't for our kind sponsors. Please give them a vist and say say thanks. If you are interested in sponsoring, you can view our <a class="sponsor-package-link" href="monospace_sponsor_packages.pdf">sponsorship packages</a> for more information.</p>
+				<ul class="main">
+					<li><a href="http://lessfilms.com"><img src="images/sponsors/less.jpg" width="136" height="164" /></a></li>
+					<li><a href="http://moncai.com"><img src="images/sponsors/moncai.jpg" width="297" height="164" /></a></li>
+				</ul>
+				<!--ul class="secondery">
+					<li><a href="#"><img src="images/sponsors/less_small.jpg" width="84" height="95" /></a></li>
+					<li><a href="#"><img src="images/sponsors/moncai_small.jpg" width="174" height="95" /></a></li>
+					<li><a href="#"><img src="images/sponsors/less_small.jpg" width="84" height="95" /></a></li>
+					<li><a href="#"><img src="images/sponsors/moncai_small.jpg" width="174" height="95" /></a></li>
+					<li><a href="#"><img src="images/sponsors/less_small.jpg" width="84" height="95" /></a></li>
+					<li><a href="#"><img src="images/sponsors/moncai_small.jpg" width="174" height="95" /></a></li>
+					<li><a href="#"><img src="images/sponsors/less_small.jpg" width="84" height="95" /></a></li>
+				</ul-->
+				<h3>Monospace is brought to you by</h3>
+				<div class="content">
+					<p>We are your humble organizers. We hope you have a great time at Monospace and that we can live up to your expectations. If we don't, please feel free to contact us and let us know!</p>
+				</div>
+				<ul id="brought">
+					<li><a href="https://twitter.com/dwragan"><img src="images/dale.jpg" width="91" height="91" /></a></li>
+					<li><a href="https://twitter.com/lonestardev"><img src="images/louis.jpg" width="91" height="91" /></a></li>
+				</ul>
+			</div>
+		</section>
+		<section id="footer">
+			<div class="wrapper">
+				<p>Copyright 2012 | All Rights are reserved</p>
+				<ul>
+					<li><a href="#speakers">Speakers</a></li>
+					<li><a href="#location">Location</a></li>
+					<li><a href="#schedule">Schedule</a></li>
+					<li><a href="#sponsors">Sponsors</a></li>
+					<li><a href="#brought">Organizers</a></li>
+					<li><a href="mailto:info@monospace.us">Contact</a></li>
+				</ul>
+				<p>Monospace is an event by <a href="http://monkeysquare.org">Monkey Square</a></p>
+			</div>
+		</section>
+		<div id="ticket-info" class="reveal-modal">
+			<div class="content">
+				<h5>Ticket Information</h5>
+				<p><strong>Price</strong></p>
+				<ul>
+					<li>$250 Early Bird until Aug 15, $300 starting Aug 16</li>
+					<li>$99 Student</li>
+				</ul>
+				<p><strong>Students</strong></p>
+				<p><strong></strong>All students will receive a student badge. &nbsp;Proof of enrollment is required. &nbsp;You may <a href="mailto:info@monospace.us">email us</a> a copy of one of the following:</p>
+				<ul>
+					<li>Current student ID</li>
+					<li>Current enrollment schedule</li>
+					<li>Proof of enrollment letter on school letterhead</li>
+				</ul>
+				<p>Once verified, we will instruct you on how to complete your registration. &nbsp;Only 15 student slots are available.</p>
+				<p><strong>Cancellation/Refund Policy</strong></p>
+				<ul>
+					<li>Fully refundable within 14 days of purchase</li>
+					<li>Cancellation up to 60 days before the conference: 50%</li>
+					<li>Cancellation up to 30 days before the conference: 25%</li>
+				</ul>
+			</div>
+		</div>
+		<div id="chris" class="reveal-modal">
+			<img src="images/speakers/chris.jpg" width="120" height="120" />
+			<div class="content">
+				<h5>Chris Hardy</h5>
+				<p>Chris Hardy, a Microsoft ASPInsider, is an .NET consultant focusing on MonoTouch and Mono for Android development.</p>
+				<p>Ever since MonoTouch was in beta, Chris has been developing and evangelising MonoTouch and Mono for Android and was one of the first users to get a MonoTouch application on to the App Store. Speaking at conferences around the world on the subject, Chris has been a key part of the community and extended this by contributing to MonoTouch and Mono for Android books.</p>
+				<a href="https://twitter.com/chrisntr">Follow on Twitter</a>
+			</div>
+		</div>
+		<div id="demis" class="reveal-modal">
+			<img src="images/speakers/demis.jpg" width="120" height="120" />
+			<div class="content">
+				<h5>Demis Bellot</h5>
+				<a href="https://twitter.com/demisbellot">Follow on Twitter</a>
+			</div>
+		</div>
+		<div id="frank" class="reveal-modal">
+			<img src="images/speakers/frank.jpg" width="120" height="120" />
+			<div class="content">
+				<h5>Frank Krueger</h5>
+				<p>Frank has been programming professionally for 13 years with most of that time spent on the Windows platform. He has rejected his Electrical Engineering education and focuses today on mobile app and web app development using a variety of platforms. Past projects include embedded engine management system development, scientific simulators, tooling for graphics and game developers, online retail, and control software for naval ships. He runs a small consulting business in Seattle, WA that enables him to work on a variety of projects in a variety of industries. Today he is most excited about the mobile platform and opportunities for advancing the state of the art of the human-machine interface.</p>
+				<a href="https://twitter.com/praeclarum">Follow on Twitter</a>
+			</div>
+		</div>
+		<div id="greg" class="reveal-modal">
+			<img src="images/speakers/greg.jpg" width="120" height="120" />
+			<div class="content">
+				<h5>Greg Shackles</h5>
+				<p>Greg Shackles is a Senior Software Engineer at OLO Online Ordering, based in New York City. His book, Mobile Development with C#, published by O'Reilly, covers how to get started building iOS, Android and Windows Phone apps with C#. As an active member of the community, Greg speaks regularly at many user groups and developer events, and is also a co-author of a monthly Mono for Android column for Visual Studio Magazine.</p>
+				<p>Outside of technology, Greg is obsessed with heavy metal, baseball, and craft beer, sometimes in combination, as well as an aspiring homebrewer.</p>
+				<a href="http://gregshackles.com">Blog</a><br/>
+				<a href="https://twitter.com/gshackles">Follow on Twitter</a>
+			</div>
+		</div>
+		<div id="james" class="reveal-modal">
+			<img src="images/speakers/james.jpg" width="120" height="120" />
+			<div class="content">
+				<h5>James Avery</h5>
+				<p>James is the founder and CEO of Adzerk, a next generation ad platform that brings simplicity and power to publishers and networks. James serves as an advisor to Max Foundry, DotNetKicks, and Epic Win Hosting. He previously co-founded Tekpub (a popular destination for developer screencasts) and Zerk Media (parent company of The Lounge and Ruby Row ad networks). James has been writing code and starting companies for the last 10 years, and has also written books for O’Reilly, Wrox, and Microsoft Press.</p>
+				<a href="https://twitter.com/averyj">Follow on Twitter</a>
+			</div>
+		</div>
+		<div id="jb" class="reveal-modal">
+			<img src="images/speakers/jb.jpg" width="120" height="120" />
+			<div class="content">
+				<h5>Jb Evain</h5>
+				<p>Jb is the founder of SyntaxTree, a developer tools company. He's the author of Mono.Cecil, a widely used library in the .net ecosystem, and a long time Mono contributor. He has a soft spot for programming languages, compilers, decompilers and tools alike.</p>
+				<a href="https://twitter.com/jbevain">Follow on Twitter</a>
+			</div>
+		</div>
+		<div id="jeroen" class="reveal-modal">
+			<img src="images/speakers/jeroen.jpg" width="120" height="120" />
+			<div class="content">
+				<h5>Jeroen Frijters</h5>
+				<p>Jeroen is the co-founder of Sumatra Software b.v. and the founder of the IKVM.NET project. He likes to develop in C#, write cranky blog posts, find security vulnerabilities and spelunk the internals of the JVM and CLR.</p>
+				<a href="#">Follow on Twitter</a>
+			</div>
+		</div>
+		<div id="phil" class="reveal-modal">
+			<img src="images/speakers/phil.jpg" width="120" height="120" />
+			<div class="content">
+				<h5>Phil Haack</h5>
+    			<p>Phil Haack (yes, it's pronounced "hack") works at GitHub finding ways to make it better for .NET and Windows developers everywhere. Prior to GitHub, he was a senior Program Manager at Microsoft responsible for shipping ASP.NET MVC, NuGet, among other projects.</p>
+				<a href="https://twitter.com/haacked">Follow on Twitter</a>
+			</div>
+		</div>
+	</body>
+</html>
