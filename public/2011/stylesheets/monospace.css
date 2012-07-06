@@ -1,0 +1,335 @@
+body {
+	font-family: Arial, sans-serif, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica;
+	color: #000000;
+	background-color: #F0F0F0;
+}
+
+a:link, a:visited {
+	color: #F09911;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #65C7F8;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+	margin-bottom: 10px;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+#wrap {
+	width: 960px;
+	max-width: 960px;
+	min-width: 960px;
+	margin: 0 auto;
+	padding: 25px 0 0 0;
+	text-align: center;
+}
+
+.left {
+	display: block;
+	float: left;
+	width: 192px;
+	text-align: right;
+}
+
+.center {
+	display: block;
+	float: left;
+	margin: 0 30px;
+	width: 516px;
+	text-align: left;
+}
+
+.right {
+	display: block;
+	float: right;
+	width: 192px;
+	text-align: left;
+}
+
+#intro {
+	margin-top: 120px;
+}
+
+#intro .center {
+	width: 324px;
+}
+
+#intro .right {
+	width: 384px;
+}
+
+#registration {
+	margin-top: 25px;
+}
+
+#registration div {
+	display: block;
+	float: left;
+	text-align: left;
+}
+
+#registration div p {
+	margin-top: 5px;
+	margin-left: 222px;
+}
+
+#registration div p strong {
+	font-size: 20px;
+}
+
+#registration span.price {
+	color: #F09911;
+	text-align: left;
+}
+
+#registration .button {
+	display: block;
+	float: right;
+	text-align: right;
+}
+
+#registration .button a {
+	display: block;
+	width: 192px;
+	height: 50px;
+}
+
+#registration .button a:link, #registration .button a:visited {
+	background: transparent url(../images/button_grabaseat.png) 0 -5px no-repeat;
+}
+
+#registration .button a:hover {
+	background-position: 0 -104px;
+}
+
+#sponsors {
+	margin-top: 120px;
+}
+
+#sponsors ul, #sponsors li {
+	display: inline;
+}
+
+#sponsors ul li {
+	margin-right: 12px;
+}
+
+#speakers h2 {
+	margin-bottom: 10px;
+}
+
+#speakers {
+	margin-top: 120px;
+}
+
+#location h2 {
+	margin-bottom: 10px;
+}
+
+#location {
+	margin-top: 120px;
+}
+
+#location h2 {
+	margin-bottom: 10px;
+}
+
+#location ul li {
+	margin-bottom: 5px;
+}
+
+#schedule h2 {
+	margin-bottom: 10px;
+}
+
+#schedule {
+	margin-top: 120px;
+}
+
+#schedule h2 {
+	margin-bottom: 10px;
+}
+
+#schedule ul li {
+	margin-bottom: 5px;
+}
+
+.tabs-container img {
+    border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.tabs-container h4 {
+	margin: 15px 0;
+}
+
+.tabs-container p {	
+	margin-bottom: 10px;
+}
+
+.schedule-container p {
+	margin-bottom: 10px;
+}
+
+.schedule table {
+	font-size: 80%;
+	margin-top: 10px;
+	text-align: left;
+	width: 100%;
+}
+
+.schedule .time {
+	width: 115px;
+}
+
+.schedule .header {
+	border-bottom: 5px double #e2e2e2;
+	padding: 5px;
+}
+
+.timeline {
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.schedule th {
+	padding: 5px;
+}
+
+.schedule td {
+	padding: 5px;
+}
+
+.talk_bio {
+	background: #e2e2e2;
+	min-height: 375px;
+	padding: 10px;
+	width: 100%;
+}
+
+.talk_bio img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.talk_bio .name {
+	font-size: 1.25em;
+	font-weight: bold;
+	width: 100%;
+}
+
+.talk_bio .talk {
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.talk_bio ul {
+	line-height: 1.5em;
+}
+
+.talk_bio p {
+	padding-top: 10px;
+}
+
+.preview img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.preview .name {
+	font-size: 1.25em;
+	font-weight: bold;
+	width: 100%;
+}
+
+.preview .talk {
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.preview ul {
+	line-height: 1.5em;
+}
+
+.preview p {
+	padding-top: 10px;
+}
+
+#venue-info {
+	margin-bottom: 15px;
+}
+
+#venue-info li {
+	font-size: 80%;
+	padding: 5px;
+}
+
+#venue-info li.active {
+    background: #65C7F8;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+#venue-info li.active a {
+    color: #fff;
+}
+
+#footer {
+	border-top: 1px #CCC solid;
+	margin-top: 120px;
+	padding-top: 45px;
+}
+
+#nav {
+	display: block;
+	float: left;
+}
+
+#nav ul li {
+	margin: 5px 0;
+}
+
+#legal {
+	display: block;
+	float: right;
+	text-align: left;
+}
+
+#by-sa {
+	width: 88px;
+	height: 31px;
+	padding: 0 0 4px 0;
+	background: url("../images/by-sa.png") no-repeat scroll;
+}
+
+#by-nc-nd {
+	width: 88px;
+	height: 31px;
+	padding: 0 0 4px 0;
+	background: url("../images/by-nc-nd.png") no-repeat scroll;
+}
+
+/*-  CLEAR FLOATS
+*/
+.group:after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}

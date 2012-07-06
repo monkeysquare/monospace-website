@@ -1,0 +1,116 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	    <title>Talks announced - Monospace 2011</title>
+		<style type="text/css" media="screen">
+			body {
+				font-size: 1em;
+				padding: 0px;
+				color: #333333;
+			}
+
+			.unsubscribe {
+				color: #666;
+				font-size: .8em;
+				margin-top: 1em;
+				margin: 10px 0 20px 0;
+				padding: 0 10px 0 0;
+				position: relative;
+				width: 100%;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="../../images/monospace_logo.png" />
+
+		<p style="font-size: 1.1em"><b>Announcing the Monospace 2011 talks &amp; speakers!</b></p>
+
+		<p>We are extremely pleased to announce the talks and speakers for this year's Mono conference! Here is the list of talks that are going to be presented. For more information about the speakers, please head out to <a href="http://monospace.us">the website</a> and take a look. If you like what you see here, please consider registering and coming to Boston in July!</p>
+
+		<span style="font-weight: bold;">Asynchronous programming made simple through messaging</span>
+		<br />
+		speaker: Svein Arne Ackenhausen
+		<p>Multi core systems are everywhere these days. How do we adapt our designs to fit this future? There are several techniques out there for utilizing multi core systems in our applications. There is the Task Parallel Library, Parallel Linq and even plain old fork and join. However these are all techniques that will help you work with parallel execution in a synchronous setting. Mixing synchronous and parallel is no match made in heaven and can become quite painful. So why are we still sticking to synchronous designs?</p>
+
+		<span style="font-weight: bold;">Functional Async UI Programming using Reactive Extensions and ReactiveUI</span>
+		<br />
+		speaker: Paul Betts
+		<p>For many modern UI applications, managing multiple asynchronous calls whether they be web service calls or calculations in the background, is now a de-facto requirement; however, our tools and frameworks for doing so, Events, are quite primitive and make even simple compositions into complex state management. The Reactive Extensions for .NET greatly simplifies this task, by allowing you to compose event streams in a declarative fashion. On top of Rx, I've built a MVVM framework called ReactiveUI, that allows you to elegantly combine changing Model or ViewModel properties into composite properties to build testable UIs with less effort, even simulating a series of events instantly in a unit test runner using the virtual time scheduler features of Rx.</p>
+
+		<span style="font-weight: bold;">Cross Platform .Net Desktop Development</span>
+		<br />
+		speaker: Jonathan Chambers
+		<p>This talk will discuss planning, developing, testing, and deploying a desktop application leveraging .Net technology. Well known applications and their approaches (Banshee, MonoDevelop, etc) will be mentioned, but special focus will be given to alternative approaches and topics. A sample application will be discussed (and code provided) as a walkthrough of the various techniques and pitfalls that exist.</p>
+
+		<span style="font-weight: bold;">Forget about Threads: Tasks, Asynchronous Methods &amp; Coroutines</span>
+		<br />
+		speaker: Arne Claassen
+		<p>Asynchronous programming using callbacks and continuation passing styles have been around in .NET since the start, but have always made code harder to read and comprehend. Coroutines, as implemented in MindTouch's DReAM framework or the async method and await constructs coming in C# 5.0, aim to make asynchronous programming simpler by retaining sequential programming workflows, while allowing async suspension of code waiting for completions. This talk will present a brief overview of available asychrony patterns, their pros and cons, and delve into a tutorial on how to use either DReAM coroutines or C# 5.0 asynchronous methods, as well as how the two implementations compare and contrast. Learn how to write code that will take advantage of multi-core architectures and avoid blocking on I/O without having to touch a thread or a lock statement in the process.</p>
+
+		<span style="font-weight: bold;">Presentation Patterns Case Study</span>
+		<br />
+		speaker: Rob Eisenberg
+		<p>In this talk we'll look at several real-world Xaml applications with non-trivial user interface designs. We'll look at the unique challenges that each application provided and see how those were mitigated through the application of various presentation patterns.</p>
+
+		<span style="font-weight: bold;">Mono and C++ - Updates from the interoperability world</span>
+		<br />
+		speaker: Andreia Gaita
+		<p>One of Mono's long-standing limitations is the C++ interoperability, or lack thereof. Traditionally, using a C++ library from C# involved creating a C glue library that served as middleman, proxying all the calls into C++ and back. by creating a flat level of C calls between the two, we lose, among other things, information in terms of object hierarchy, the ability to subclass, and end up with a rather large list of cryptic pinvokes - ugly code, in short.</p>
+
+		<span style="font-weight: bold;">Problems and Solutions for Mobile App Developers</span>
+		<br />
+		speaker: Frank A. Krueger
+		<p>This talk will present three recurring problems faced by mobile developers while building their apps and will focus on code patterns and strategies used to solve them. The selection is based on problems the presenter continuously encounters and have been identified as those that prevent him from having the most fun.</p>
+		<ul>
+			<li>* The Disconnected Internet Device</li>
+			<li>* Minimizing Code with Multiple UIs and Platforms</li>
+			<li>* Discovering and Squashing Bugs</li>
+		</ul>
+		<p>Even though there are only three topics, each one could be an entire talk on its own. This means that this talk will be a whirlwind through ideas and practical solutions. There will be an emphasis on mobile app development using the Mono platform since that seems to be all the presenter can think about these days</p>
+
+		<span style="font-weight: bold;">Using the Open Source Internet Pack with Mono</span>
+		<br />
+		speaker: Jim McKeeth
+		<p>Internet Pack is an open source, lightweight and easy to use TCP/IP framework built on top of the Mono/.NET Socket library. It provides a range of ready-to-use client and server implementations for common network protocols like HTTP, FTP or SMTP, while at the same time providing easily extendable base classes that allow developers to implement their own (be it custom or standard) protocols, as needed.</p>
+		<p>This session introduces the attendee to Internet Pack, looks through some of the features and usage. Demo applications will be provided.</p>
+
+		<span style="font-weight: bold;">F# and Mono, Best Friends Forever</span>
+		<br />
+		speaker: Richard Minerich
+		<p>With F# being the only open source language shipping with Visual Studio, it and Mono have a special relationship. Now that the Microsoft F# team's open source drops have been directly integrated with mono, F# is the only mono language implementation which is exactly the same as on the CLR. This means that as F# grows and matures at Microsoft, you can be sure that the latest features will be available almost immediately in Mono. Come learn about what F# is and how you can start using it in Mono today!</p>
+
+		<span style="font-weight: bold;">A tour of the F# compiler</span>
+		<br />
+		speaker: Joe Pamer
+		<p>Have an idea for an F# language extension, refactoring tool or MonoDevelop plugin? Want to learn more about our compiler, or compilers for functional languages in general? In this talk, I’ll discuss the F# compiler and runtime’s overall architecture, and walk through F#’s compilation process - from parse, to typecheck to codegen. The source code to the F# compiler and runtime is currently available under the Apache license at <a href="http://fsharppowerpack.codeplex.com">fsharppowerpack.codeplex.com</a>, so feel free to study ahead and bring questions!</p>
+
+		<span style="font-weight: bold;">Let me introduce my Moncai!</span>
+		<br />
+		speaker: Dale Ragan
+		<p>Cloud services are changing the way we approach developing application's. Learn how Platform-as-a-Service (PaaS) takes it a step further and helps you forget about server's and focus on your problems. We'll start by discussing the philosophies behind PaaS and then dive into using Moncai to deploy, build, and scale your web, mobile, or social application's written in .NET.</p>
+
+		<span style="font-weight: bold;">Introduction to Android Development Using .NET and Mono</span>
+		<br />
+		speaker: Greg Shackles
+		<p>The Android platform has become a major player in the mobile space, but requires writing applications in Java. With the introduction of Mono for Android, .NET developers are now able to leverage the platform and tools they know to write Android applications. This session will act as an introduction to Android development using Mono, starting with the fundamental aspects of the Android architecture, and then diving into a lot of code.</p>
+
+		<span style="font-weight: bold;">Using APIs to Connect People To Your App and Each Other</span>
+		<br />
+		speaker: John Sheehan 
+		<p>Can your web app handle incoming email, make phone calls or connect two people to a live video chat? This session will explore three cloud services that allow you to accomplish these tasks via a simple API. We'll explore the SendGrid Parse API for handling incoming email, Twilio's API for sending and receiving phone calls and text messages and the OpenTok API from TokBox for video conferencing in a web browser.</p>
+
+		<span style="font-weight: bold;">Asynchronous memcached with a side of Ketchup and Membase</span>
+		<br />
+		speaker: Jason Sirota
+		<p>Developing scalable applications requires data caching of commonly used data, coupled with Asynchronous programming, this is a powerful tool for maximizing the throughput of your application. Learn how to harness the power of Asynchronous IO in your application by caching data in memcached asynchronously using <a href="http://membase.org">Membase</a> and the asynchronous Ketchup driver for memcached.</p>
+
+		<span style="font-weight: bold;">Cross Platform Mobile Data Access Patterns</span>
+		<br />
+		speaker: Travis Smith
+		<p>Developing applications for mobile devices can be a challenge and working with multiple platforms this can become more challenging. iOS and Android devices come with sqlite but Windows Phone 7 devices are left in the cold, out of the box. Finding common ground for storage and data access patterns that can be reused across platforms when leveraging the mono tools (MonoDroid, MonoTouch) will be discussed and demoed.</p>
+
+		<div class="unsubscribe">
+			this email was sent to you because you selected to receive emails from us. If you wish to unsubscribe, please click <unsubscribe>here</unsubscribe>
+		</div>
+	</body>
+</html>
