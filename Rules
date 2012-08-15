@@ -23,6 +23,10 @@ Route("/css/*/", (context) => {
   return context.Item.Identifier.Chop() + context.Item.Meta["extension"];
 });
 
+Compile("/email_campaign/", (context) => {
+  // Don't filter or layout
+});
+
 Compile("/speakers/", (context) => {
   // Don't filter or layout
 });
