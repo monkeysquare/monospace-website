@@ -77,6 +77,10 @@ nav a {
 	width: 450px; float: left; margin: 87px 0 0 0;
 }
 
+#intro h2 {
+	font-size: 40px;
+}
+
 #intro .guestlist-event-92640 {
 	background: url('../images/register_button.png') no-repeat left top;
 	width: 307px; height: 84px; display: block; text-indent: -9999px;margin: 10px 0 0;
